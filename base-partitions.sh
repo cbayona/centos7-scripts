@@ -1,5 +1,5 @@
 ## swap partition
-#dd if=/dev/zero of/dev/mapper/swap.partition bs=1024 count=1048576
+#dd if=/dev/zero of=/dev/mapper/swap.partition bs=1024 count=1048576
 #mkswap /swapfile
 #chmod 0600 /dev/mapper/swap.partition
 #swapon /dev/mapper/swap.partition
