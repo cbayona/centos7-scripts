@@ -5,18 +5,18 @@
 #swapon /dev/mapper/swap.partition
 
 ## tmp partition
-dd if=/dev/zero of/dev/mapper/tmp.partition bs=1024 count=262144
+dd if=/dev/zero of=/dev/mapper/tmp.partition bs=1024 count=262144
 /sbin/mke2fs /tmp.partition
 mount -o defaults,nosuid,noexec,nodev /tmp.partition /tmp
 chmod 3777 /tmp
 
 ## var partition
-dd if=/dev/zero of/dev/mapper/var.partition bs=1024 count=524288
+dd if=/dev/zero of=/dev/mapper/var.partition bs=1024 count=524288
 /sbin/mke2fs /var.partition
 mount -o defaults,nosuid,noexec,nodev /var.partition /var
 
 ## var/tmp partition
-dd if=/dev/zero of/dev/mapper/var_tmp.partition bs=1024 count=524288
+dd if=/dev/zero of=/dev/mapper/var_tmp.partition bs=1024 count=524288
 /sbin/mke2fs /var_tmp.partition
 mount -o defaults,nosuid,noexec,nodev /var_tmp.partition /var/tmp
 
@@ -27,7 +27,7 @@ mount -o defaults,nosuid,noexec,nodev /var_tmp.partition /var/log
 mount -o defaults,nosuid,noexec,nodev /var_tmp.partition /var/log/audit
 
 ## home partition
-dd if=/dev/zero of/dev/mapper/home.partition bs=1024 count=4194304
+dd if=/dev/zero of=/dev/mapper/home.partition bs=1024 count=4194304
 /sbin/mke2fs /home.partition
 mount -o defaults,nosuid,noexec,nodev /home.partition /home
 
