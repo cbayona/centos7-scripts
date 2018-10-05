@@ -1,8 +1,8 @@
-# centos7-scripts
-<b>CentOS7 Scripts</b>
+# CentOS7 Scripts
+You need a [CentOS 7](https://www.centos.org/download/) installed
 
-<u>Base scripts</u>
+## Base scripts
 
-<u>Update scripts</u>
+## Update scripts
 
-<u>Security scripts</u>
+## Security scripts
